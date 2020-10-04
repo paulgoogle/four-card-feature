@@ -1,0 +1,185 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.attribution{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+html{
+  background:hsl(0, 0%, 98%);
+}
+
+.header{
+  text-align: center;
+  margin-top: 3rem;
+  line-height: 1.25rem;
+  width: 100%;
+}
+
+.header h1{
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.header h2{
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header p{
+  width:30%;
+  margin:1rem auto;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.main-card{
+  display: flex;
+  max-width: 75%;
+  margin: 2rem auto;
+  justify-content: space-between;
+}
+
+.card{
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  height:200px;
+  width:325px;
+  padding: 1.5rem;
+  box-shadow: 5px 5px 10px lightgrey;
+}
+
+.col1{
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  width:33.33%
+}
+
+.col2{
+  width:33.33%
+}
+
+.col2 .card:nth-child(1){
+  margin-bottom: 1rem;
+}
+
+.col3{
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  width:33.33%
+}
+
+.card1{
+  border-top: lightseagreen solid 3px;
+}
+
+.card2{
+  border-top: red solid 3px;
+}
+
+.card3{
+  border-top: orange solid 3px;
+}
+
+.card4{
+  border-top: blue solid 3px;
+}
+
+.card img{
+  padding-top: 35px;
+  height: 90px;
+  position: relative;
+  left:80%;
+}
+
+.card h3{
+  font-size: 1.25rem;
+  margin-bottom: .5rem
+}
+
+
+@media screen and (max-width:1125px){
+  .main-card{
+    max-width: 90%; 
+  }
+}
+
+@media screen and (max-width:1110px){
+  .main-card{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:990px){
+  .main-card{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width:100%;
+    justify-content: space-evenly;
+
+  }
+
+  .card{
+    margin: 0.5rem auto;
+    width: 280px;
+  }
+
+  .col1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    width:100%
+  }
+  
+  .col2{
+    width:100%;
+  }
+   
+  .col3{
+    display: flex;
+    flex-direction: column;
+    margin-top:0;
+    width:100%
+  }
+
+  .header{
+    text-align: center;
+    margin-top: 3rem;
+    line-height: 1rem;
+    width: 100%;
+  }
+  
+  .header h1{
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+  
+  .header h2{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .header p{
+    width:80%;
+    margin:0.5rem auto;
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+
+  .card img{
+    padding-top: 25px;
+    height: 70px;
+    left:75%;
+  }
+
+}
